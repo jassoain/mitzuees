@@ -1,0 +1,27 @@
+<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+<a-scene>
+
+<a-sky src="clouds.jpg"></a-sky>
+
+<a-entity id="ball"
+geometry="primitive: sphere; radius: 0.5"
+material="src: grapes.jpg"
+position="0 1.75 -2"></a-entity>
+
+<a-entity id="box"
+geometry="primitive: box;"
+material= "src: grapes2.jpg"
+position="-1.93772 1.75 -2"></a-entity>
+
+
+
+<a-assets>
+  <a-asset-item id="dog-gltf" src="gltf/dog.gltf"></a-asset-item>
+</a-assets>
+
+<a-entity id="dog" gltf-model="#dog-gltf"></a-entity>
+
+
+
+
+</a-scene>
